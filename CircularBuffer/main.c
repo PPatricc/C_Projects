@@ -2,7 +2,7 @@
 #include "circular_buffer.h"
 
 int main() {
-    printf("Podaj rozmiar bufora: ");
+    printf("Input the size of the buffer: ");
     int Rozm;
     if(scanf("%d",&Rozm)!=1){
         printf("Incorrect input");
@@ -20,7 +20,7 @@ int main() {
     }
     int errC;
     for(;;){
-        printf("Co chcesz zrobic? ");
+        printf("What would you like to do ?");
         int WhatTodo;
         if(scanf("%d",&WhatTodo)!=1){
             printf("Incorrect input");
@@ -35,7 +35,7 @@ int main() {
         }
         switch (WhatTodo) {
             case 1 :
-                printf("Podaj liczbe");
+                printf("Insert an integer ");
                 int Toadd;
                 if(scanf("%d",&Toadd)!=1){
                     circular_buffer_destroy_struct(&Bufor);
